@@ -347,3 +347,14 @@ p {
     min-height: 180px;
   }
 }
+.page-hero {
+  min-height: 58vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page-hero h1 {
+  max-width: none;
+  font-size: clamp(3.4rem, 9vw, 7rem);
+}
