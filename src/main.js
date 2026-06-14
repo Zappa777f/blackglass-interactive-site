@@ -28,3 +28,18 @@ if ('IntersectionObserver' in window && revealElements.length > 0) {
 } else {
   revealElements.forEach((element) => element.classList.add('is-visible'));
 }
+
+const contactLinks = document.querySelectorAll('.contact-link');
+
+contactLinks.forEach((link) => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+
+    const user = 'contact';
+    const domain = 'blackglassinteractive.com';
+    const subject = link.dataset.subject || 'Blackglass Interactive Enquiry';
+    const email = `${user}@${domain}`;
+
+    window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}`;
+  });
+});
