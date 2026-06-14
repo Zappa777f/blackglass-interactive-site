@@ -11,6 +11,10 @@ export default defineConfig({
       input: {
         main: resolve(directory, 'index.html'),
         support: resolve(directory, 'support/index.html'),
+        lastGuestPrivacy: resolve(
+          directory,
+          'privacy/last-guest-at-sunset/index.html',
+        ),
       },
     },
   },
