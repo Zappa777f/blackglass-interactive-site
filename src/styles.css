@@ -87,7 +87,12 @@ a:hover {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-
+.brand-logo-mark {
+  width: 1.35rem;
+  height: 1.35rem;
+  object-fit: contain;
+  filter: drop-shadow(0 0 10px rgba(201, 164, 93, 0.25));
+}
 .brand-mark {
   width: 1.05rem;
   height: 1.05rem;
@@ -99,7 +104,13 @@ a:hover {
   box-shadow: 0 0 22px rgba(201, 164, 93, 0.24);
   transform: rotate(45deg);
 }
-
+.hero-brand-logo {
+  display: block;
+  width: min(460px, 86vw);
+  height: auto;
+  margin-bottom: 2.2rem;
+  filter: drop-shadow(0 0 28px rgba(201, 164, 93, 0.14));
+}
 .site-nav,
 .site-footer nav,
 .product-links,
@@ -156,7 +167,7 @@ h1 {
   max-width: 11ch;
   margin-bottom: 1.5rem;
   color: var(--text);
-  font-size: clamp(4rem, 11vw, 8.6rem);
+  font-size: clamp(3.5rem, 9vw, 7.2rem);
   line-height: 0.88;
   letter-spacing: -0.078em;
 }
