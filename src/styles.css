@@ -111,6 +111,14 @@ a:hover {
   margin-bottom: 2.2rem;
   filter: drop-shadow(0 0 28px rgba(201, 164, 93, 0.14));
 }
+
+.hero-brand-mark {
+  display: block;
+  width: 512px;
+  max-width: 100%;
+  height: auto;
+}
+
 .site-nav,
 .site-footer nav,
 .product-links,
@@ -143,7 +151,10 @@ a:hover {
 }
 
 .hero-content {
+  width: 100%;
   max-width: 880px;
+  margin-inline: auto;
+  text-align: center;
 }
 
 .eyebrow,
@@ -194,10 +205,23 @@ p {
 
 .hero-copy {
   max-width: 690px;
-  margin-bottom: 2rem;
+  margin: 0 auto 2rem;
   color: var(--text-muted);
   font-size: clamp(1.15rem, 2vw, 1.48rem);
   line-height: 1.55;
+}
+
+.hero .hero-brand-mark {
+  margin-inline: auto;
+}
+
+.hero h1 {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.hero .hero-actions {
+  justify-content: center;
 }
 
 .button {
@@ -472,6 +496,10 @@ p {
 }
 
 @media (max-width: 560px) {
+  body {
+    min-width: 0;
+  }
+
   .section,
   .showcase-section {
     width: min(100% - 1.25rem, 1120px);
@@ -499,6 +527,12 @@ p {
   height: 220px;
   object-fit: cover;
   transform: scale(1.01);
+}
+
+.product-image--uncropped {
+  object-fit: contain;
+  background: #050505;
+  transform: none;
 }
 
 .showcase-links {
